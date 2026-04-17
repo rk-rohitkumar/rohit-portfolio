@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohit Kumar | BI & Automation Architect</title>
+    <!-- Basic Google Fonts Import for better readability -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- GLOBAL STYLES --- */
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+        h1, h2 {
+            color: #007BFF; /* Primary Accent Color */
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h2 {
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            display: inline-block;
+            width: auto; /* Adjusts width to fit text */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* --- HEADER / HERO SECTION --- */
+        .hero {
+            background-color: #ffffff;
+            padding: 80px 20px;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 5px;
+        }
+        .hero p.job-title {
+            font-size: 1.8em;
+            color: #6c757d;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            margin-top: 15px;
+        }
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* --- SECTION STYLING --- */
+        section {
+            padding: 60px 0;
+        }
+
+        /* Skills Grid */
+        #skills .skill-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            text-align: center;
+        }
+        .skill-tag {
+            background-color: #e9ecef;
+            padding: 10px 25px;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        /* Experience Section */
+        .job-card {
+            background: white;
+            border-left: 4px solid #007BFF;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .job-card h3 {
+            color: #007BFF;
+            margin-top: 0;
+        }
+        .metadata p {
+            margin: 5px 0;
+            font-size: 0.9em;
+        }
+        .responsibilities ul, .impact-list li {
+            margin: 5px 0 10px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        .responsibilities ul li::before, .impact-list li::before {
+            content: '•';
+            color: #007BFF;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-right: 0.5em;
+        }
+
+        /* Core Philosophy / Expertise */
+        #philosophy {
+            background-color: #e6f2ff; /* Light blue background for contrast */
+            padding: 40px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        .value-prop {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .value-card {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            flex-basis: calc(33% - 40px); /* Three columns */
+            min-width: 250px;
+        }
+
+        /* --- FOOTER / CONTACT --- */
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+        }
+        .social-links a {
+            color: white;
+            margin: 0 15px;
+            font-size: 1.5em;
+            text-decoration: none;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5em;
+            }
+            .value-card {
+                flex-basis: 100%; /* Stack cards on mobile */
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- =================================== -->
+    <!-- HERO SECTION (The First Impression) -->
+    <!-- =================================== -->
+    <header class="hero">
+        <div class="container">
+            <p style="color: #6c757d; font-weight: 500;">Rohit Kumar</p>
+            <h1>BI & Automation Architect</h1>
+            <p class="job-title">Finance Transformation Professional</p>
+
+            <p style="max-width: 800px; margin: 20px auto 30px;">
+                I specialize in transforming, manual business processes into streamlined and automated solutions. My unique blend of deep domain expertise (Accounting and Finance) and technical mastery (low code no code tools) allows me to translate vague business needs into valuable solutions.
+            </p>
+
+            <div class="social-links">
+                <!-- Replace # with your actual links -->
+                <a href="https://www.linkedin.com/in/rohitkumar070190/" aria-label="LinkedIn"><span style="font-size: 2em;">💼</span></a>
+                <a href="https://github.com/rk-rohitkumar" aria-label="GitHub"><span style="font-size: 2em;">💻</span></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- =================================== -->
+    <!-- ABOUT ME / CORE PHILOSOPHY SECTION (The "Why") -->
+    <!-- =================================== -->
+    <section id="philosophy">
+        <div class="container">
+            <h2>💡 My Unique Value Proposition</h2>
+            <p style="text-align: center; font-size: 1.2em; max-width: 800px; margin: 0 auto 40px;">
+                My background is not just technical, it is Business First. I solve problems by understanding the underlying financial logic and business requirements, ensuring that technology implementation adds genuine value.
+            </p>
+
+            <div class="value-prop">
+                <!-- Value 1: Finance + Tech -->
+                <div class="value-card">
+                    <strong>✅ The Translator</strong>
+                    <p style="font-size: 0.95em; margin-top: 5px;">I can bridge the communication gap between non-technical business stakeholders and technical development teams. I can translate vague requirements into structured, executable business rules.</p>
+                </div>
+                <!-- Value 2: Technical Scope -->
+                <div class="value-card">
+                    <strong>🛠️ End-to-End Architect</strong>
+                    <p style="font-size: 0.95em; margin-top: 5px;">Designing, developing, and maintaining entire solutions from data pipeline creation (ETL) to user interface implementation using low-code no-code tools.</p>
+                </div>
+                <!-- Value 3: Domain Expertise -->
+                <div class="value-card">
+                    <strong>📊 Financial Deep Dive</strong>
+                    <p style="font-size: 0.95em; margin-top: 5px;">Deep knowledge of Accounting, Tax, and Compliance ensures solutions are robust, legally compliant, and highly relevant to financial operations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================================== -->
+    <!-- TECHNICAL SKILLS SECTION -->
+    <!-- =================================== -->
+    <section id="skills">
+        <div class="container">
+            <h2>🛠️ Core Technical Skills & Tools</h2>
+            <p style="text-align: center; margin-bottom: 40px;">Top Skills</p>
+
+            <div class="skill-grid">
+                <!-- BI -->
+                <span class="skill-tag">Data Visualization</span>
+                <span class="skill-tag">Data Modeling</span>
+                <span class="skill-tag">ETL</span>
+                <span class="skill-tag">ELT</span>
+                <span class="skill-tag">Power BI</span>
+                <span class="skill-tag">Dataflows</span>
+                <span class="skill-tag">MS Fabric Pipelines</span>
+                <span class="skill-tag">Data Validation & Governance</span>
+
+                <!-- Automation -->
+                <span class="skill-tag">Power Automate Flows (Cloud & Desktop)</span>
+                <span class="skill-tag">Canvas Apps Development</span>
+                <span class="skill-tag">Workflow Automation (Approvals, File Mgmt)</span>
+                <span class="skill-tag">Excel Optimization (VBA / Macros)</span>
+
+                <!-- Domain & Data -->
+                <span class="skill-tag">Financial Accounting Principles (GAAP/ IFRS)</span>
+                <span class="skill-tag">Process Mapping & Improvement</span>
+                <span class="skill-tag">SAP, Tally</span>
+                <span class="skill-tag">Compliance & Auditing Knowledge</span>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =================================== -->
+    <!-- PROFESSIONAL EXPERIENCE SECTION -->
+    <!-- =================================== -->
+    <section id="experience" style="background-color: #f4f7fa;">
+        <div class="container">
+            <h2>💼 Professional Experience</h2>
+
+            <!-- ROLE 1: WOOD GROUP PSN -->
+            <div class="job-card">
+                <h3>BI and Automation Architect | Wood Group PSN India Private Limited</h3>
+                <p class="metadata"><strong>Duration:</strong> Current | <strong>Function:</strong> Finance</p>
+                
+                <h4>🎯 Key Responsibilities & Focus Areas</h4>
+                <div class="responsibilities">
+                    <ul>
+                        <li>Designing, developing, and maintaining end-to-end BI and automation solutions across critical finance functions.</li>
+                        <li>Supporting core business areas including Accounting, Payments, Billing cycles, Time Writing, and Payroll processing.</li>
+                        <li>Utilizing a low-code no-code tools: Power BI, MS Fabric, Power Automate, Power Apps, and Desktop Automation.</li>
+                    </ul>
+                </div>
+
+                <h4>🏆 Measurable Impact & Achievements</h4>
+                <ul class="impact-list">
+                    <li>Process Modernization: Developed in-house Payments Approval Tool and Expense Audit Approval Tool using Power Apps, replacing cumbersome legacy SharePoint workflows.</li>
+                    <li>Executive Reporting: Created a crucial dashboard for the Remediation Group (reporting to ELT) that provided high-level insights, saving leadership valuable time.</li>
+                    <li>Proactive Optimization: Designed and delivered a customisable Page in existing dashboard for the cash Optimization team. A need they didn't realize they had, receiving exceptional positive feedback from senior management.</li>
+                </ul>
+            </div>
+
+            <!-- ROLE 2: GENPACT -->
+            <div class="job-card">
+                <h3>Process Developer | Genpact India Private Limited</h3>
+                <p class="metadata"><strong>Duration:</strong> Prior employer | <strong>Function:</strong> Reconciliation & Finance</p>
+                
+                <h4>🎯 Key Responsibilities</h4>
+                <div class="responsibilities">
+                    <ul>
+                        <li>Handling the preparation and presentation of complex major bank reconciliations for corporate clients.</li>
+                        
+                    </ul>
+                </div>
+
+                <h4>🏆 Measurable Impact & Achievements</h4>
+                <ul class="impact-list">
+                    <li>Efficiency Improvement: Improved multiple manual processes by implementing simple enhancements using Macros and advanced Excel formulas, significantly boosting processing speed while maintaining accuracy.</li>
+                    <li>Recognized with Quarterly Awards and positive client appreciation for process improvements and dedicated support.</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- =================================== -->
+    <!-- CONTACT/FOOTER -->
+    <!-- =================================== -->
+    <footer>
+        <div class="container">
+            <h2>🚀 Let's Connect</h2>
+            <p style="font-size: 1.2em; margin-bottom: 30px;">Intersted in getting in touch?</p>
+            <a href="https://www.linkedin.com/in/rohitkumar070190/" class="cta-button" style="background-color: #28a745;">Connect on LinkedIn</a>
+            <br><br>
+            <small>&copy; 2024 Rohit Kumar. Crafted to showcase Finance Transformation Expertise.</small>
+        </div>
+    </footer>
+
+</body>
+</html>
